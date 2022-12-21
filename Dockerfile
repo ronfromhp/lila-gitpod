@@ -11,7 +11,7 @@ RUN sudo ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && sudo echo $TZ > /etc/
 RUN locale-gen "en_US.UTF-8"
 
 # Install coursier (dependency of bloop)
-RUN curl -fL https://github.com/coursier/launchers/raw/a827601d2f3d05a92df8f1d46cdd256afb1716b0/cs-x86_64-pc-linux.gz | gzip -d > cs \
+RUN curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs \
     && chmod +x cs \
     && sudo mv cs /usr/local/bin/cs \
     && cs setup --yes
