@@ -3,5 +3,8 @@
     "Welcome.md": "vscode.markdown.preview.editor"
   }
   ,
-  "metals.javaHome": "/home/gitpod/.sdkman/candidates/java/current"
+  "metals.javaHome": "/home/gitpod/.sdkman/candidates/java/current",
+  "files.watcherExclude": {
+    "**/target": true
+  }
 }

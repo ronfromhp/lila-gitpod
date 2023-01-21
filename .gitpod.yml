@@ -69,7 +69,6 @@ tasks:
       open --reuse-window /workspace/lila
   - name: search-setup
     command:
-      ## my personal commands
       gp sync-await setup
       echo "search.enabled = true" >> /workspace/lila/conf/application.conf
       git clone https://github.com/lichess-org/lila-search /workspace/lila-search
